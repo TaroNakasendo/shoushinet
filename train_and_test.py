@@ -65,8 +65,8 @@ class LeNet(nn.Module):
 
 
 net = LeNet()
-# device = "cpu"
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = "cpu"
+# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 net.to(device)
 

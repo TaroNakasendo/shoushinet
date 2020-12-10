@@ -67,7 +67,7 @@ if not cap.read()[0]:
 transformer = ImageTransformer(mean, std)
 while True:
     _, frame = cap.read()  # 画像を取得
-    # time.sleep(0.1)
+    time.sleep(0.1)
     if frame is None:
         break
     short_side = min(frame.shape[0], frame.shape[1])  # 短辺
